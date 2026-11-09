@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Billion Small Steps · Book and teaching materials</title>
+<meta name="description" content="A Billion Small Steps: How Your AI Really Runs, from the Maths to the Machine. A free book by Aishwarya S. Request the instructor's answers or the student materials.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1D2B36; --soft:#4A5866; --navy:#17324D; --sky:#2F7FB5; --rope:#E07A2E; --leaf:#2E8B57; --red:#CF4436; --cream:#FBF6EC; --paper:#FFFFFF; --rule:#D6DEE6; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--cream); color:var(--ink); font:17px/1.6 "Source Serif 4", Georgia, serif; }
+  h1, h2, h3, label, .btn, .kicker { font-family: Nunito, "Segoe UI", sans-serif; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 40px 0 24px; }
+  .kicker { color:var(--rope); font-weight:800; letter-spacing:3px; font-size:13px; text-transform:uppercase; }
+  h1 { color:var(--navy); font-weight:900; font-size: clamp(34px, 6vw, 56px); line-height:1.02; margin:8px 0 6px; }
+  h1 span { color:var(--rope); }
+  .sub { font-family:Nunito,sans-serif; font-weight:800; font-size: clamp(17px, 2.4vw, 22px); margin:0 0 10px; }
+  .hero { display:grid; grid-template-columns: 1fr 260px; gap:28px; align-items:start; }
+  .hero img { width:100%; border-radius:6px; box-shadow:0 8px 24px rgba(23,50,77,.18); background:#fff; }
+  @media (max-width: 720px) { .hero { grid-template-columns: 1fr; } .hero img { max-width:240px; } }
+  .card { background:var(--paper); border:1.6px solid var(--rule); border-radius:14px 3px 14px 3px; padding:20px 22px; margin:18px 0; }
+  .card h2 { color:var(--navy); margin:0 0 8px; font-size:22px; }
+  .grid2 { display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
+  @media (max-width: 720px) { .grid2 { grid-template-columns: 1fr; } }
+  .pill { display:inline-block; font:800 12px Nunito,sans-serif; padding:2px 10px; border-radius:20px; color:#fff; background:var(--sky); }
+  .pill.t { background:var(--leaf); } .pill.s { background:var(--rope); }
+  form { display:grid; grid-template-columns: 1fr 1fr; gap:14px 18px; }
+  form .full { grid-column: 1 / -1; }
+  @media (max-width: 640px) { form { grid-template-columns: 1fr; } }
+  label { font-weight:800; font-size:14px; color:var(--navy); display:block; margin-bottom:4px; }
+  input, select, textarea { width:100%; font:16px "Source Serif 4", Georgia, serif; padding:9px 11px; border:1.4px solid var(--rule); border-radius:8px; background:#fff; color:var(--ink); }
+  input:focus, select:focus, textarea:focus { outline:2px solid var(--sky); border-color:var(--sky); }
+  .hint { font-size:13.5px; color:var(--soft); margin-top:3px; }
+  .btn { display:inline-block; background:var(--rope); color:#fff; font-weight:900; font-size:16px; border:0; border-radius:10px; padding:12px 22px; cursor:pointer; text-decoration:none; }
+  .btn[disabled] { opacity:.6; cursor:wait; }
+  .msg { padding:12px 16px; border-radius:10px; margin-top:10px; display:none; }
+  .msg.ok { display:block; background:#EAF7EF; border:1.4px solid var(--leaf); }
+  .msg.err { display:block; background:#FFF1EF; border:1.4px solid var(--red); }
+  .hp { position:absolute; left:-9999px; }
+  .teacher-only { display:none; }
+  footer { color:var(--soft); font-size:14px; padding:24px 0 40px; border-top:1px solid var(--rule); margin-top:28px; }
+  a { color:var(--sky); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="hero">
+      <div>
+        <div class="kicker">A free book · Hardware for AI</div>
+        <h1>A Billion <span>Small Steps</span></h1>
+        <p class="sub">How Your AI Really Runs, from the Maths to the Machine</p>
+        <p>The maths AI actually computes, from zero, and the hardware that runs it: neurons and matrix multiplies, why AI needs a GPU, what is inside a GPU, how the CPU and GPU work together, and how to make an AI project fast, make it fit, and plan its cost. Written by <b>Aishwarya S.</b>, Department of Cyber Security &amp; IoT, Sri Ramachandra Faculty of Engineering and Technology, Chennai, for the skill course <i>Hardware for AI</i>, with twelve Colab Core Labs and the interactive <a href="https://aishugithub.github.io/course_GPU/">Foothold course</a>.</p>
+        <p><a class="btn" href="#request">Request the materials</a></p>
+      </div>
+      <img src="cover.png" alt="Cover of A Billion Small Steps">
+    </div>
+  </header>
+
+  <div class="grid2">
+    <div class="card">
+      <h2><span class="pill t">Teachers</span> Instructor’s materials</h2>
+      <p>Worked answers to every end-of-step exercise (Steps 1–5 and Appendix G), including the lab extensions with real run results, and the book PDF. Sent after we confirm that you teach.</p>
+    </div>
+    <div class="card">
+      <h2><span class="pill s">Students</span> Student materials</h2>
+      <p>The book PDF and links to the Colab Core Labs and Side Trails. Ask for them below with your college details, and they will be sent to your e-mail.</p>
+    </div>
+  </div>
+
+  <div class="card" id="request">
+    <h2>Request the materials</h2>
+    <p class="hint" style="margin-top:0">Each request is checked by hand, usually within two working days. Your details are used only to send the materials and to know where the book is being used.</p>
+    <form id="req" novalidate>
+      <div><label for="name">Full name *</label><input id="name" name="name" required autocomplete="name"></div>
+      <div><label for="email">E-mail *</label><input id="email" name="email" type="email" required autocomplete="email"><div class="hint">Teachers: your college e-mail helps us confirm you quickly.</div></div>
+      <div><label for="role">I am a *</label>
+        <select id="role" name="role" required><option value="">Choose…</option><option value="Teacher">Teacher / faculty member</option><option value="Student">Student</option><option value="Other">Other (self-learner, industry)</option></select></div>
+      <div><label for="institution">College / university / organisation *</label><input id="institution" name="institution" required autocomplete="organization"></div>
+      <div><label for="department">Department / programme</label><input id="department" name="department" placeholder="e.g. Cyber Security &amp; IoT, B.Tech AIML"></div>
+      <div><label for="course">Course or year</label><input id="course" name="course" placeholder="e.g. Hardware for AI, 2nd year"></div>
+      <div class="full teacher-only"><label for="proof">Link to your faculty profile page (teachers) *</label><input id="proof" name="proof" type="url" placeholder="https://"><div class="hint">Your college website’s staff page, or LinkedIn. It lets us confirm you are a teacher.</div></div>
+      <div class="full"><label for="purpose">How will you use the book?</label><textarea id="purpose" name="purpose" rows="3" placeholder="e.g. teaching the skill course to 60 students this semester"></textarea></div>
+      <input class="hp" tabindex="-1" autocomplete="off" name="website" aria-hidden="true">
+      <div class="full"><label style="font-weight:600;font-family:'Source Serif 4',serif"><input type="checkbox" id="agree" style="width:auto;margin-right:8px">I will not post the instructor’s answers where students can see them (teachers), and I accept the book’s licence (CC BY-NC-SA 4.0).</label></div>
+      <div class="full"><button class="btn" id="send" type="submit">Send request</button>
+        <div class="msg" id="msg"></div></div>
+    </form>
+  </div>
+
+  <footer>
+    <p><b>Licence:</b> text and figures © 2026 Aishwarya S., <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>; code under the MIT licence. Written with the help of an AI assistant (Claude, by Anthropic); every page reviewed by the author.</p>
+    <p>Questions or corrections: use the form above with “Other”, and write your message under “How will you use the book?”.</p>
+  </footer>
+</div>
+<script src="config.js"></script>
+<script>
+  const role = document.getElementById("role");
+  role.addEventListener("change", () => {
+    document.querySelectorAll(".teacher-only").forEach(el => el.style.display = role.value === "Teacher" ? "block" : "none");
+  });
+  const form = document.getElementById("req"), msg = document.getElementById("msg"), btn = document.getElementById("send");
+  function show(kind, text) { msg.className = "msg " + kind; msg.textContent = text; }
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const f = new FormData(form);
+    const need = ["name", "email", "role", "institution"];
+    if (f.get("role") === "Teacher") need.push("proof");
+    const missing = need.filter(k => !String(f.get(k) || "").trim());
+    if (missing.length) { show("err", "Please fill in: " + missing.join(", ") + "."); return; }
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(f.get("email"))) { show("err", "Please check your e-mail address."); return; }
+    if (!document.getElementById("agree").checked) { show("err", "Please tick the box to accept the licence."); return; }
+    if (!window.SUPPLEMENTS_URL || window.SUPPLEMENTS_URL.includes("PASTE")) { show("err", "The request form is not connected yet. Please try again later."); return; }
+    btn.disabled = true; btn.textContent = "Sending…";
+    const body = new URLSearchParams();
+    for (const [k, v] of f.entries()) body.append(k, v);
+    body.append("page", location.href);
+    try {
+      await fetch(window.SUPPLEMENTS_URL, { method: "POST", mode: "no-cors", body });
+      form.reset(); document.querySelectorAll(".teacher-only").forEach(el => el.style.display = "none");
+      show("ok", "Thank you! Your request has been received. You will get an e-mail once it has been checked (usually within two working days).");
+    } catch (err) {
+      show("err", "Sorry, the request could not be sent. Please check your connection and try again.");
+    }
+    btn.disabled = false; btn.textContent = "Send request";
+  });
+</script>
+</body>
+</html>
